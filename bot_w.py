@@ -13,11 +13,11 @@ from weekday import *
 import pyowm
 import datetime
 
-owm = pyowm.OWM("b6af74c05f5a05acd3ec8cab87284878")
+owm = pyowm.OWM("TOKEN")
 mgr = owm.weather_manager()
 
 
-bot = Bot(token="5228907122:AAGS_OJC-WHq3QVn4Zhs_GZqD4AYag3bEpA")
+bot = Bot(token="TOKEN")
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 logging.basicConfig(level=logging.INFO)
